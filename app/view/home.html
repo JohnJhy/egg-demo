@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>egg</title>
+</head>
+
+<body>
+  <!-- <form action="/home/post" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="age" placeholder="age">
+    <input type="submit" value="提交">
+  </form> -->
+  <script src="../public/js/axios.min.js"></script>
+  <script src="../public/js/js.cookie.min.js"></script>
+  <script src="../public/js/util.js"></script>
+  <script>
+    util.request("/home/post", { name: '张三' }, res => {
+      console.log(res)
+    })
+  </script>
+</body>
+
+</html>
